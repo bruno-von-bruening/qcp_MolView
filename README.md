@@ -1,5 +1,7 @@
 # mayavi_molecule_viewer
 
+This package builds a molecule viewer using the `mayavi` python package (https://github.com/enthought/mayavi)
+
 ## Installation
 First create a conda environment with the provided file:
 ```
