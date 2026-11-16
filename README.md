@@ -1,7 +1,8 @@
-# mayavi_molecule_viewer
+# QCP_MolView
+
+Molecule viewer allowing the visualaziation of surfaces (e.g. ESP on an iso-density surface).
 
 This package builds a molecule viewer using the `mayavi` python package (https://github.com/enthought/mayavi)
-
 ## Installation
 First create a conda environment with the provided file:
 ```
@@ -10,13 +11,19 @@ conda env create -f install/mayavi_mol-view_conda_env.yaml
 at the moment the package versions are quite tightly defined and if one want to install newer version that may require
 some trial-and-error with these settings.
 
-Then install mayavi_molecule_viewer as a local package:
+Then install qcp_MolView as a local package:
 ```bash
 conda activate mayavi
 python -m pip install --upgrade build
 python -m build
 python -m pip install .
 ```
+
+## Test Installation
+Run the code described in `tests/visual_investigation/how_to_run.md` 
+to confirm that a H2O molecule is reasonably displayed!
+
+You can also test if the display runs in notebook using `tests/plot_in_ipynb/interactive_notebook.ipynb`.
 
 ## Running the Code
 The code can be found under `mayavi_viewer.py` and references an object that can be found under `mod_objects.py`.

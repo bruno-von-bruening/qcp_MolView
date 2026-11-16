@@ -8,7 +8,7 @@ from typing import Tuple, Literal
 
 
 from mayavi import mlab
-import mayavi_molecule_viewer.mod_objects as m_obj
+import qcp_MolView.mod_objects as m_obj
 
 
 import logging

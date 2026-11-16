@@ -1,5 +1,5 @@
 [project]
-name = "mayavi_molecule_viewer"
+name = "qcp_MolView"
 version = "0.0.0"
 description = ''
 readme = "README.md"
@@ -11,7 +11,11 @@ classifiers = [
 dependencies = [ # following restrictions are based on probelms occuring on 2026 Nov 10
    'puremagic<2.0', # if interactive version (puremagic appears in newer version) does not work with 2.0
    'numpy<2.0', # mayavi did not work with numpy 2.0 
+   'pydantic',
 ]
 
 [tool.setuptools]
-script-files = ["bin/mayavi_MolView.py" ]
+script-files = [
+   "bin/qcp_MolView.py", 
+   "bin/qcp_export_envo.py", 
+]

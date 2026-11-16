@@ -1,10 +1,10 @@
 #!/usr/bin/env python
-from mayavi_molecule_viewer.main import plot_esp_surface, see_through_options
+from qcp_MolView.main import plot_esp_surface, see_through_options
 from mayavi import mlab
 import mayavi
 import os
 import yaml
-from mayavi_molecule_viewer.config import mayavi_config
+from qcp_MolView.config import mayavi_config
 from pydantic import Field,BeforeValidator,validate_call; val_call=validate_call(config=dict(arbitrary_types_allowed=True))
 from typing import Annotated
 

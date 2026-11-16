@@ -1,0 +1,23 @@
+name: test_qcp_MolView
+channels:
+  - conda-forge
+  - conda-forge/label/libint_dev
+  - defaults
+dependencies:
+  - python=3.12.2
+  - pip
+  - numpy=1.26.4
+  - libstdcxx-ng
+  - pip:
+    - build
+    - rich
+    - setuptools-scm
+    - vtk==9.3
+    - mayavi==4.8.2
+    - PyQT5==5.15.11
+    - configobj
+    - rdkit
+    - jupyter==1.0.0
+    - ipyevents==2.0.2
+    - git+ssh://git@github.com/bruno-von-bruening/qcp_global_utils.git@68f3857ae
+    - git+ssh://git@github.com/bruno-von-bruening/qcp_objects.git@900c4eb2a
