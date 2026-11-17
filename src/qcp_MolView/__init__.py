@@ -12,3 +12,5 @@ import qcp_MolView.mod_objects as m_obj
 
 
 import logging
+
+from qcp_MolView._version import __version__

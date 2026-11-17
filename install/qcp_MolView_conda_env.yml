@@ -1,0 +1,21 @@
+name: qcp_MolView
+channels:
+   - conda-forge
+   - defaults
+dependencies:
+  - python=3.12.2
+  - pip
+  - numpy=1.26.4
+  - libstdcxx-ng
+  - mayavi=4.8.2
+  - PyQT=5.15.11
+  - vtk=9.3.1
+  - jupyter==1.0.0
+  - ipyevents==2.0.2
+  - rdkit
+  - pip:
+     - build
+     - setuptools-scm<81 # For handling of pyproject.toml installation
+     - rich # For prettily formatted error messages
+     - pydantic 
+     - configobj

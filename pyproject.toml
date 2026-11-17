@@ -1,6 +1,6 @@
 [project]
 name = "qcp_MolView"
-version = "0.0.0"
+dynamic=['version']
 description = ''
 readme = "README.md"
 requires-python = ">=3.8"
@@ -12,10 +12,20 @@ dependencies = [ # following restrictions are based on probelms occuring on 2026
    'puremagic<2.0', # if interactive version (puremagic appears in newer version) does not work with 2.0
    'numpy<2.0', # mayavi did not work with numpy 2.0 
    'pydantic',
+   # 'setuptools<82', # problem with pkg resources
 ]
 
 [tool.setuptools]
 script-files = [
-   "bin/qcp_MolView.py", 
+   "bin/qcp_MolView_exe.py", 
    "bin/qcp_export_envo.py", 
 ]
+[tool.setuptools_scm]
+# version_scheme = "post-release"
+# local_scheme = "dirty-tag"
+# Make a version file (can the be used by this very package)
+version_file = "src/qcp_MolView/_version.py"
+
+[build-system]
+requires = ["setuptools>=80", "wheel", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
